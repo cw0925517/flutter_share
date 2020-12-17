@@ -1,0 +1,60 @@
+PODS:
+  - Flutter (1.0.0)
+  - mob_sharesdk (4.3.15):
+    - mob_sharesdk/ShareSDK (= 4.3.15)
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDK (4.3.15):
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKExtension (4.3.15):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKPlatforms/Facebook (4.3.15):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKPlatforms/Instagram (4.3.15):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKPlatforms/Line (4.3.15):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKPlatforms/Twitter (4.3.15):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKUI (4.3.15):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - MOBFoundation (3.2.24)
+  - sharesdk_plugin (1.1.2):
+    - Flutter
+    - mob_sharesdk
+    - mob_sharesdk/ShareSDKExtension
+    - mob_sharesdk/ShareSDKPlatforms/Facebook
+    - mob_sharesdk/ShareSDKPlatforms/Instagram
+    - mob_sharesdk/ShareSDKPlatforms/Line
+    - mob_sharesdk/ShareSDKPlatforms/Twitter
+    - mob_sharesdk/ShareSDKUI
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - sharesdk_plugin (from `.symlinks/plugins/sharesdk_plugin/ios`)
+
+SPEC REPOS:
+  trunk:
+    - mob_sharesdk
+    - MOBFoundation
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  sharesdk_plugin:
+    :path: ".symlinks/plugins/sharesdk_plugin/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  mob_sharesdk: c0b0fb2d37b0b4a408fddd32109f9ef5a51361b9
+  MOBFoundation: 934ee1a43aed452d51942b416bc3dc4d0813ac82
+  sharesdk_plugin: 0f3ca88fae2f711c5de1a2036778e71df8578ba2
+
+PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
+
+COCOAPODS: 1.9.3
