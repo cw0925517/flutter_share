@@ -1,5 +1,21 @@
 PODS:
+  - FBSDKCoreKit (8.2.0):
+    - FBSDKCoreKit/Basics (= 8.2.0)
+    - FBSDKCoreKit/Core (= 8.2.0)
+  - FBSDKCoreKit/Basics (8.2.0)
+  - FBSDKCoreKit/Core (8.2.0):
+    - FBSDKCoreKit/Basics
+  - FBSDKShareKit (8.2.0):
+    - FBSDKShareKit/Share (= 8.2.0)
+  - FBSDKShareKit/Share (8.2.0):
+    - FBSDKCoreKit (~> 8.2.0)
   - Flutter (1.0.0)
+  - flutter_social_content_share (0.0.1):
+    - FBSDKCoreKit
+    - FBSDKShareKit
+    - Flutter
+  - image_picker (0.0.1):
+    - Flutter
   - mob_sharesdk (4.3.15):
     - mob_sharesdk/ShareSDK (= 4.3.15)
     - MOBFoundation (>= 3.2.9)
@@ -17,6 +33,9 @@ PODS:
   - mob_sharesdk/ShareSDKPlatforms/Line (4.3.15):
     - mob_sharesdk/ShareSDK
     - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKPlatforms/QQ (4.3.15):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
   - mob_sharesdk/ShareSDKPlatforms/Twitter (4.3.15):
     - mob_sharesdk/ShareSDK
     - MOBFoundation (>= 3.2.9)
@@ -24,6 +43,8 @@ PODS:
     - mob_sharesdk/ShareSDK
     - MOBFoundation (>= 3.2.9)
   - MOBFoundation (3.2.24)
+  - share (0.0.1):
+    - Flutter
   - sharesdk_plugin (1.1.2):
     - Flutter
     - mob_sharesdk
@@ -31,30 +52,47 @@ PODS:
     - mob_sharesdk/ShareSDKPlatforms/Facebook
     - mob_sharesdk/ShareSDKPlatforms/Instagram
     - mob_sharesdk/ShareSDKPlatforms/Line
+    - mob_sharesdk/ShareSDKPlatforms/QQ
     - mob_sharesdk/ShareSDKPlatforms/Twitter
     - mob_sharesdk/ShareSDKUI
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
+  - flutter_social_content_share (from `.symlinks/plugins/flutter_social_content_share/ios`)
+  - image_picker (from `.symlinks/plugins/image_picker/ios`)
+  - share (from `.symlinks/plugins/share/ios`)
   - sharesdk_plugin (from `.symlinks/plugins/sharesdk_plugin/ios`)
 
 SPEC REPOS:
   trunk:
+    - FBSDKCoreKit
+    - FBSDKShareKit
     - mob_sharesdk
     - MOBFoundation
 
 EXTERNAL SOURCES:
   Flutter:
     :path: Flutter
+  flutter_social_content_share:
+    :path: ".symlinks/plugins/flutter_social_content_share/ios"
+  image_picker:
+    :path: ".symlinks/plugins/image_picker/ios"
+  share:
+    :path: ".symlinks/plugins/share/ios"
   sharesdk_plugin:
     :path: ".symlinks/plugins/sharesdk_plugin/ios"
 
 SPEC CHECKSUMS:
+  FBSDKCoreKit: 4afd6ff53d8133a433dbcda44451c9498f8c6ce4
+  FBSDKShareKit: 0c0d51b3af47075a85ed9bea0e28b2fc70e3594b
   Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  flutter_social_content_share: b2546c98605e3e90b7f8e46f932e7df82725d684
+  image_picker: 9c3312491f862b28d21ecd8fdf0ee14e601b3f09
   mob_sharesdk: c0b0fb2d37b0b4a408fddd32109f9ef5a51361b9
   MOBFoundation: 934ee1a43aed452d51942b416bc3dc4d0813ac82
-  sharesdk_plugin: 0f3ca88fae2f711c5de1a2036778e71df8578ba2
+  share: 0b2c3e82132f5888bccca3351c504d0003b3b410
+  sharesdk_plugin: 73a2e5288553091895b25a1e609408c2c3297a43
 
-PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
+PODFILE CHECKSUM: ffd7293eb7d5907b54a367fd400872baeef513a5
 
 COCOAPODS: 1.9.3
